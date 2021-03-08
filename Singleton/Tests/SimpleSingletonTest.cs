@@ -1,5 +1,4 @@
 using System;
-using Singleton;
 
 namespace Singleton.Tests
 {
@@ -12,6 +11,8 @@ namespace Singleton.Tests
 
         public void Test()
         {
+            Console.WriteLine();
+            Console.WriteLine("---Simple singleton test ----------------");
             SimpleSingleton s1 = SimpleSingleton.GetInstance();
             SimpleSingleton s2 = SimpleSingleton.GetInstance();
 
