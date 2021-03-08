@@ -6,8 +6,13 @@ namespace DesignPattern
     {
         static void Main(string[] args)
         {
-            SimpleSingletonTest test = new SimpleSingletonTest();
-            test.Test();
+            // simple singleton pattern test
+            SimpleSingletonTest simpleSingletonTest = new SimpleSingletonTest();
+            simpleSingletonTest.Test();
+
+            // thread-safe singleton pattern test
+            ThreadSafeSingletonTest threadSafeSingletonTest = new ThreadSafeSingletonTest();
+            threadSafeSingletonTest.Test();
         }
     }
 }
