@@ -1,15 +1,17 @@
+﻿using DesignPattern.CreationalPatterns;
 using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace Singleton.Tests
+namespace Example.CreationalPatterns
 {
-    public class SimpleSingletonTest
+    public class SimpleSingletonExample
     {
-        public SimpleSingletonTest()
+        public SimpleSingletonExample()
         {
-            
-        }
 
-        public void Test()
+        }
+        public void Run()
         {
             Console.WriteLine();
             Console.WriteLine("---Simple singleton test ----------------");

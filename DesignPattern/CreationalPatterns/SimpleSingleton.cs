@@ -1,12 +1,10 @@
-﻿using System;
-
-namespace Singleton
+﻿namespace DesignPattern.CreationalPatterns
 {
     public class SimpleSingleton
     {
         private SimpleSingleton()
         {
-            
+
         }
         private static SimpleSingleton instance;
         public static SimpleSingleton GetInstance()

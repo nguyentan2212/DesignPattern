@@ -1,15 +1,16 @@
+﻿using DesignPattern.CreationalPatterns;
 using System;
 using System.Threading;
 
-namespace Singleton.Tests
+namespace Example.CreationalPatterns
 {
-    public class ThreadSafeSingletonTest
+    public class ThreadSafeSingletonExample
     {
-        public ThreadSafeSingletonTest()
+        public ThreadSafeSingletonExample()
         {
-            
+
         }
-        public void Test()
+        public void Run()
         {
             Console.WriteLine();
             Console.WriteLine("---Thread-safe singleton test ----------------");
@@ -19,7 +20,7 @@ namespace Singleton.Tests
                 "If you see different values, then 2 singletons were created.",
                 "RESULT:"
             );
-            
+
             Thread process1 = new Thread(() =>
             {
                 TestThreadSafeSingleton("ONE");
@@ -28,10 +29,10 @@ namespace Singleton.Tests
             {
                 TestThreadSafeSingleton("TWO");
             });
-            
+
             process1.Start();
             process2.Start();
-            
+
             process1.Join();
             process2.Join();
         }
@@ -39,6 +40,6 @@ namespace Singleton.Tests
         {
             ThreadSafeSingleton singleton = ThreadSafeSingleton.GetInstance(value);
             Console.WriteLine(singleton.Value);
-        } 
+        }
     }
 }
