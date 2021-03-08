@@ -1,12 +1,13 @@
 ﻿using System;
-
+using Singleton.Tests;
 namespace DesignPattern
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            SimpleSingletonTest test = new SimpleSingletonTest();
+            test.Test();
         }
     }
 }
