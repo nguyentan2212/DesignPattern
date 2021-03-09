@@ -5,10 +5,6 @@ namespace DesignPattern.CreationalPatterns.Singleton
 {
     public class ThreadSafeSingletonExample
     {
-        public ThreadSafeSingletonExample()
-        {
-
-        }
         public void Run()
         {
             Console.WriteLine();

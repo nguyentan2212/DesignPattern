@@ -4,10 +4,6 @@ namespace DesignPattern.CreationalPatterns.Singleton
 {
     public class SimpleSingletonExample
     {
-        public SimpleSingletonExample()
-        {
-
-        }
         public void Run()
         {
             Console.WriteLine();
