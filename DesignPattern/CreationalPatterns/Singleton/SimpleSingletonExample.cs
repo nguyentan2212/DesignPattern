@@ -1,9 +1,6 @@
-﻿using DesignPattern.CreationalPatterns;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System;
 
-namespace Example.CreationalPatterns
+namespace DesignPattern.CreationalPatterns.Singleton
 {
     public class SimpleSingletonExample
     {

@@ -1,5 +1,5 @@
 ﻿using System;
-using Example.CreationalPatterns;
+using DesignPattern.CreationalPatterns.Singleton;
 
 namespace Main
 {

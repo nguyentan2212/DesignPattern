@@ -1,8 +1,7 @@
-﻿using DesignPattern.CreationalPatterns;
-using System;
+﻿using System;
 using System.Threading;
 
-namespace Example.CreationalPatterns
+namespace DesignPattern.CreationalPatterns.Singleton
 {
     public class ThreadSafeSingletonExample
     {
