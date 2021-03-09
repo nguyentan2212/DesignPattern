@@ -1,5 +1,6 @@
 ﻿using System;
 using DesignPattern.CreationalPatterns.Singleton;
+using DesignPattern.CreationalPatterns.FactoryMethod;
 
 namespace Main
 {
@@ -14,6 +15,10 @@ namespace Main
             // thread - safe singleton pattern test
             ThreadSafeSingletonExample threadSafeSingletonExample = new ThreadSafeSingletonExample();
             threadSafeSingletonExample.Run();
+
+            // factory method pattern test
+            FactoryMethodExample factoryMethodExample = new FactoryMethodExample();
+            factoryMethodExample.Run();
         }
     }
 }
